@@ -1,0 +1,145 @@
+@import _variables
+// @import url(node_modules/bootstrap/scss/bootstrap-grid.scss)
+
+@font-face
+	font-family: 'Roboto'
+	src: url(../fonts/Roboto-Regular.ttf)
+	font-style: normal
+	font-weight: 400
+
+@font-face
+	font-family: 'Roboto'
+	src: url(../fonts/Roboto-Bold.ttf)
+	font-style: normal
+	font-weight: 700
+
+*
+	box-sizing: border-box
+	font-family: Roboto
+
+a
+	text-decoration: none !important
+
+a:hover
+	cursor: pointer
+
+ul
+	margin: 0 !important
+	padding: 0 !important
+
+button,
+button:active,
+button:focus
+	width: 0
+	height: 0
+	margin: 0 !important
+	padding: 0 !important
+	border: none
+
+body
+	margin: 0
+	padding: 0
+
+header
+	margin-bottom: $spacing-8
+	border-bottom: 1px solid $lineColor
+
+.global-notification
+	padding-top: 16px
+	padding-bottom: 16px
+	background: $blackColor
+	color: $whiteColor
+
+	text-align: center
+	font-size: 12px
+
+.global-notification a
+	color: $whiteColor
+
+.site-brand
+	font-size: 32px
+
+nav
+	padding: 24px 0
+
+nav ul
+	display: flex
+	list-style: none
+	gap: 40px
+
+nav a
+	font-size: 16px
+
+nav li
+	padding: 8px 0
+	border-bottom: 1px solid transparent
+
+nav li:hover
+	padding-bottom: 8px
+	border-bottom-color: #000
+
+nav>.row
+	align-items: center
+
+.header-buttons
+	display: flex
+	justify-content: right
+	align-items: center
+	gap: 24px
+
+// .login-button
+// 	background-image: url("assets\images\icons\mdi-light_account.svg")
+
+.products-section__text
+	text-align: center
+	padding-bottom: $spacing-7
+
+	font-weight: bold
+	font-size: 32px
+
+.product-cards
+	margin-bottom: $spacing-5
+
+.product-card
+	margin-bottom: 24px
+
+.product-card__overlay
+	background-color: transparent
+
+.product-card__body-wrapper
+	padding: $spacing-4 $spacing-2
+	width: 100%
+	height: 100%
+	background-color: $bgColor
+	border-radius: 8px
+
+.product-card__img
+	width: 100%
+	height: auto
+	object-fit: cover
+	background-color: red
+	margin-bottom: $spacing-3
+
+.product-card__text
+	text-align: center
+	color: black
+
+.product-card__title
+	margin-bottom: $spacing-3
+
+.product-card__price
+	margin-bottom: $spacing-3
+
+.dots
+	display: flex
+	gap: 16px
+	justify-content: center
+
+.dot
+	width: 8px
+	height: 8px
+	background-color: $greyColor
+	border-radius: 50%
+
+.active
+	background-color: $darkGreyColor
